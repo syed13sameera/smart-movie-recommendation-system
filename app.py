@@ -55,7 +55,7 @@ def load_data():
         except:
             return ""
 
-    movies["cast_names"] = movies["cast"].apply(get_cast)
+    movies["cast_names"] = movies["cast_names"].fillna("")
 
     # --------------------------------------------------------
     # Clean genres
